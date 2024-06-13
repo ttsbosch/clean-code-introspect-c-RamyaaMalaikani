@@ -1,3 +1,5 @@
+#include "CSVtoXML.h"
+
 typedef struct {
     char SourceCurrency[256]; 
     char DestinationCurrency[256]; 
