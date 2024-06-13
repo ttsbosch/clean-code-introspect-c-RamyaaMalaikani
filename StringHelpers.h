@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <errno.h>
+#include "CSVtoXML.h"
 
 char** SplitString(const char* Input_str, char delimiter);
