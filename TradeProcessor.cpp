@@ -10,7 +10,6 @@ typedef struct {
     double Price;
 } TradeRecord;
 
-
 char** SplitString(const char* Input_str, char delimiter) {
     int count = 0;
     const char* ptr = Input_str;
