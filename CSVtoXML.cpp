@@ -31,22 +31,22 @@ char** SplitString(const char* Input_str, char delimiter) {
     return Duplicates;
 }
 
-bool TryConvertToInt(const char* Input_str, int* value) { 
+int TryConvertToInt(const char* Input_str, int* value) { 
     char* endptr;
     *value = strtol(Input_str, &endptr, 10);
     if (endptr == Input_str) {
-        return FALSE;
+        return 0;
     }
-    return TRUE;
+    return 1;
 }
 
-bool TryConvertToDouble(const char* Input_str, double* value) { 
+int TryConvertToDouble(const char* Input_str, double* value) { 
     char* endptr;
     *value = strtod(Input_str, &endptr);
     if (endptr == Input_str) {
-        return FALSE;
+        return 0;
     }
-    return TRUE;
+    return 1;
 }
 
 void TryConvertDataFromCSVtoXML(FILE* stream) { 
